@@ -1,5 +1,91 @@
-/*estilos body*/
-/* Start https://www.cursors-4u.com */ * {cursor: url(https://cur.cursors-4u.net/cursors/cur-11/cur1038.cur), auto !important;} /* End https://www.cursors-4u.com */
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+ }
+ .container-card{
+    width: 100%;
+    display:flex;
+    max-width: 1100px;
+    margin: auto;
+ }
+
+ .title-card{
+    width: 100%;
+    max-width: 1080px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    color: #41644A;
+ }
+
+ .card{
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #EAE0DA;
+    box-shadow: 0px 1px 10px #CEEDC7;
+    transition: all 400ms ease-out;
+    cursor: default;
+ }
+
+ .card:hover{
+    box-shadow: 5px 5px 20px #BFCCB5;
+    transform: translate(-3%);
+ }
+
+ .card img{
+    width: 100%;
+    height: 200px;
+    align: center;
+ }
+
+ .card .contenido-card{
+    padding: 15px;
+    text-align: center;
+ }
+
+ .card .contenido-card h3{
+    margin-bottom: 15px;
+    color: #263A29;
+ }
+
+ .card .contenido-card p{
+    line-height: 1.8;
+    color: #245953;
+    font-size: 14px;
+    margin-bottom: 5px;
+ }
+
+ .card .contenido-card a{
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #263A29;
+    border: 1px solid #263A29;
+    border-radius: 4px;
+    transition: all 400ms ease;
+    margin-bottom: 5px;
+ }
+
+ .card .contenido-card a:hover{
+    background: #BFCCB5;
+    color: #245953;
+ }
+ @media only screen and (min-width:320px) and (max-width:768px){
+    .container-card{
+        flex-wrap: wrap;
+    }
+    .card{
+        margin: 15px;
+    }
+ }
+ /*estilos body*/
 body{
     margin: 0;
     padding: 0;
@@ -8,7 +94,6 @@ body{
     color: #E74646;
     background: #FFF3E2;
     font-family: 'PT Sans', sans-serif;
-
     }
     
     /*estilo de las imágenes de la página*/
@@ -93,7 +178,7 @@ body{
     .menu-bar{
     width: 100%;
     box-sizing: border-box;
-    background: #FF6969;
+    background: #2d2d2d;
     text-align: left;
     padding: 15px 20px;
     color: white;
@@ -136,7 +221,7 @@ body{
     .menu-bar{
     width: 100%;
     box-sizing: border-box;
-    background: #E8A9A9;
+    background: #2d2d2d;
     text-align: left;
     padding: 15px 20px;
     color: white;
@@ -344,4 +429,3 @@ body{
     font-size: 1.2em;
     }
     }
-    
